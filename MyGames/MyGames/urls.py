@@ -23,8 +23,6 @@ from django.urls import path, include
 from . import views
 
 
-# Assuming you have a home app for the main page
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.register, name="register"),
@@ -33,5 +31,4 @@ urlpatterns = [
     path("logout_page/", views.logout_page, name="logout_page"),
     path("leaderboard/", views.leaderboard, name="leaderboard"),
     path("score_submit/", views.score_submit, name="score_submit"),
-    path("levels/", views.levels, name="levels"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
