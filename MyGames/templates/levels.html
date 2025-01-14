@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Level Selection</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Game Mode</h1>
+        <div class="button-group">
+            <a href="{% url 'main_page' %}"><button class="count_button_for_10">Easy Mode</button></a>
+            <a href="{% url 'main_page' %}"><button class="count_button_for_5">Medium Mode</button></a>
+            <a href="{% url 'main_page' %}"><button class="count_button_for_3">Hard Mode</button></a>
+            <a href="{% url 'leaderboard' %}"><button class="game-button">Leaderboard</button></a>
+        </div>
+    </div>
+    <script src="{% static 'js/game_logic.js' %}"></script>
+</body>
+</html>

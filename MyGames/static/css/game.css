@@ -1,0 +1,169 @@
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    justify-content: space-evenly; 
+    background-color: #3F0D12;
+    height: 200px;
+    width:30%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.quit{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    justify-content: space-evenly; 
+    width: 200px;
+    padding: 10px;
+
+
+}
+.scoreboard { 
+    font-size: 18px; 
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #436098; 
+    margin-left: 350px;
+    margin-right: 318px;
+    
+
+
+    
+}
+#rockBtn {
+    background-image: url("/static/images/rock.jpg");
+    background-size: cover;
+    width: 100px;
+    border-radius: 20px;
+    height: 100px;
+}
+#paperBtn{
+    background-image: url("/static/images/paper.jpg");
+    background-size: cover;
+    width: 100px;
+    border-radius: 20px;
+    height: 100px;
+
+
+}
+#scissorBtn{
+    background-image: url("/static/images/scissors.jpg");
+    background-size: cover;
+    width: 100px;
+    border-radius: 20px;
+    height: 100px;
+
+
+}
+.allbtn{
+    background-color: #261C1B;
+    background-image: url("/static/images/banner1.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 580px;
+    align-items: center;
+    position: relative;
+    right: 10px;
+    position: relative; 
+    left: 350px;
+
+}
+.scoreboard{
+    background-color: #7B263A;
+    align-items: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 318px;
+    padding: 2px;
+    
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+
+}
+
+.buttons {
+    display: flex ;
+}
+.mode{
+    text-align: center;
+    background-color:#202743 ;
+    margin-left: 350px;
+    margin-right: 318px;
+    padding: 10px;
+
+}
+.leaderboard{
+    text-align: center;
+    background-color:#202743 ;
+    margin-left: 350px;
+    margin-right: 318px;
+    padding: 10px;
+
+}
+.quitform{
+    text-align: center;
+    background-color:#436098 ;
+    margin-left: 350px;
+    margin-right: 318px;
+    padding: 10px;
+}
+.welcome{
+    padding: 10px;
+    display: inline;
+    position: relative;
+
+}
+
+.body{
+    background-color: #F0F2F5;
+}
+
+
+#resetBtn, #submitBtn {
+
+    font-size: 16px; /* Adjust text size */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Button background color */
+    color: black; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    text-align: center ;
+}
+
+#resetBtn i, #submitBtn i {
+    margin-right: 5px; /* Space between icon and text */
+    pointer-events: none; /* Prevent click events on icons */
+}
+#rockBtn, #paperBtn, #scissorBtn {
+    background-size: cover;
+    width: 100px;
+    border-radius: 20px;
+    height: 100px;
+    border: 2px solid #000; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    font-size: 24px; /* Adjust icon size */
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out; /* Add transition */
+
+}
+#rockBtn:active, #paperBtn:active, #scissorBtn:active {
+    transform: scale(0.95); /* Scale down on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+.highscore{
+    display: inline;
+    position: relative;
+    left: 90px;
+}

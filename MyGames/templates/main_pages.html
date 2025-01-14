@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="{% static 'css/game.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="allbtn">
+        <h2 class="welcome">Welcome ,{{request.user}}!</h2>
+        {% if recent_score %}
+        <h2 class="highscore"> Your Highest Score: {{ recent_score.score }}</h2>
+        {% endif %}
+    </div>
+        <div class="box">
+            <p id="roundsRemaining"></p> 
+                <h3 id="result"></h3> 
+                <h2 class="finalscore" id="finalScoreDisplay"></h2> <!-- Added final score display -->
+                <div class="text">
+                    <h3>Rock</h3>
+                    <h3>Paper</h3>
+                    <h3>Scissor</h3>
+                </div>
+                <div>
+                    <button id="rockBtn"></button> 
+                    <button id="paperBtn"></button> 
+                    <button id="scissorBtn"></button>
+            </div>
+            <div class="quit">
+                <button id="resetBtn"><i class="fas fa-redo"></i> Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="scoreboard"> 
+        <p>Player Scores: <span id="playerScore">0</span></p> 
+        <p>Computer Scores: <span id="computerScore">0</span></p>
+    </div>
+        <div class="mode">
+    <button class="Easy_Mode">Easy Mode</button>
+    <button class="Medium_Mode">Medium Mode</button>
+    <button class="Hard_Mode">Hard Mode</button>
+    </div>
+    <div class="leaderboard">
+    <a href="{% url 'leaderboard' %}"><button >leaderboard</button></a>
+    </div>
+    <div class="quitform">
+        <form action="{% url 'score_submit' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="score" id="scoreInput">
+        <button type="submit" id="submitBtn"><i class="fas fa-sign-out-alt"></i> Quit</button>
+    </form>
+    </div>
+
+    <script src="{% static 'js/games.js' %}"></script>
+</body>
+</html>
