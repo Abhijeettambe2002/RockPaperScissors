@@ -1,3 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("/static/images/bg4.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+}
 .btns {
     display: flex;
     justify-content: center;
@@ -31,6 +40,7 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: #436098; 
+    
     margin-left: 350px;
     margin-right: 318px;
     
@@ -68,12 +78,16 @@
     background-image: url("/static/images/banner1.jpg");
     background-size: cover;
     height: 400px;
-    width: 580px;
+    width: 595px;
     align-items: center;
     position: relative;
     right: 10px;
     position: relative; 
     left: 350px;
+
+}
+.allbtn h2{
+    padding: 10px;
 
 }
 .scoreboard{
@@ -165,5 +179,5 @@
 .highscore{
     display: inline;
     position: relative;
-    left: 90px;
+    left: 50px;
 }
