@@ -1,6 +1,8 @@
 # MyGames
 
-MyGames is a Django-based web application designed to manage and display game scores. This project includes user authentication, score management, and a simple admin interface.
+# MyGames
+
+MyGames is a comprehensive Django-based web application designed to manage and display game scores. This project features robust user authentication, efficient score management, and an intuitive admin interface. Users can enjoy different game modes, track their scores in real-time, and compete on  leaderboard.
 
 ## Table of Contents
 
@@ -9,7 +11,6 @@ MyGames is a Django-based web application designed to manage and display game sc
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -65,15 +66,29 @@ MyGames is a Django-based web application designed to manage and display game sc
 ## Usage
 
 1. Open your web browser and go to `http://127.0.0.1:8000/`.
-2. Log in with the superuser credentials you created.
-3. Use the admin interface to manage game scores and users.
+2. Register a new user account or log in with the superuser credentials you created.
+4. Use the admin interface to manage users and game scores:
+   - Go to `http://127.0.0.1:8000/admin/`.
+   - Log in with the superuser credentials you created during installation.
+   - Use the admin interface to add, edit, or delete users and game scores.
+5. Choose the game mode - Easy, Medium, or Hard.
+6. View your current score as you play.
+7. View your highest score.
+8. Check the leaderboard to see other players' highest scores.
+9. Log out when you are done using the application.
 
 ## Features
 
 - User authentication and management
 - Score management
-- Admin interface
+- Admin interface for managing users and scores
 - Static files and templates
+- Game modes: Easy, Medium, Hard
+- Real-time score tracking
+- User-specific highest score display
+- Leaderboard showcasing top players' scores
+
+
 
 ## Project Structure
 
@@ -108,8 +123,26 @@ MyGames is a Django-based web application designed to manage and display game sc
 
 ## Contributing
 
-We welcome contributions! Please read our contributing guidelines for more information.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## License
+1. **Fork the repository:**
+    ```sh
+    git fork https://github.com/yourusername/AnimeRecommendations.git
+    ```
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+2. **Create your feature branch:**
+    ```sh
+    git checkout -b feature/YourFeature
+    ```
+
+3. **Commit your changes:**
+    ```sh
+    git commit -m 'Add some feature'
+    ```
+
+4. **Push to the branch:**
+    ```sh
+    git push origin feature/YourFeature
+    ```
+
+5. **Open a pull request.**
